@@ -1,0 +1,10 @@
+Antigua SantaLucia 40
+SantaLucia Peten 10
+Antigua Guatemala 50
+Peten Antigua 20
+Peten Guatemala 30
+Guatemala Peten 10
+Guatemala Escuintla 20
+Escuintla Antigua 10
+Escuintla Guatemala 40
+SantaLucia Escuintla 60

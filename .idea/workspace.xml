@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="">
+    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="Implementado Floyd y DirectedGraph">
+      <change afterPath="$PROJECT_DIR$/guategrafo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/DirectedGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/DirectedGraphTest.java" afterDir="false" />
     </list>
@@ -17,13 +20,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TonitoMC"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5b09d80a-ac93-4472-b255-8e22693bb023" />
+        <option name="url" value="https://github.com/TonitoMC/HDT10_V2.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -36,7 +53,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "JUnit.DirectedGraphTest.testAddEdge.executor": "Run",
+    "JUnit.DirectedGraphTest.testFloydMatrix.executor": "Run",
     "JUnit.DirectedGraphTest.testRemoveEdge.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -61,7 +80,7 @@
       <recent name="uvg.edu.gt" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DirectedGraphTest.testRemoveEdge">
+  <component name="RunManager">
     <configuration name="DirectedGraphTest.testAddEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDT10A" />
       <extension name="coverage">
@@ -73,6 +92,22 @@
       <option name="PACKAGE_NAME" value="uvg.edu.gt" />
       <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.DirectedGraphTest" />
       <option name="METHOD_NAME" value="testAddEdge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DirectedGraphTest.testFloydMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDT10A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.DirectedGraphTest" />
+      <option name="METHOD_NAME" value="testFloydMatrix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DirectedGraphTest.testFloydMatrix" />
         <item itemvalue="JUnit.DirectedGraphTest.testRemoveEdge" />
         <item itemvalue="JUnit.DirectedGraphTest.testAddEdge" />
       </list>
@@ -109,11 +145,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716338868798</updated>
-      <workItem from="1716338869821" duration="628000" />
+      <workItem from="1716338869821" duration="6978000" />
     </task>
+    <task id="LOCAL-00001" summary="Implementado Floyd y DirectedGraph">
+      <option name="closed" value="true" />
+      <created>1716340922852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716340922852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementado Floyd y DirectedGraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado Floyd y DirectedGraph" />
   </component>
 </project>

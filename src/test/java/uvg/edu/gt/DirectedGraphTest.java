@@ -47,4 +47,17 @@ public class DirectedGraphTest extends TestCase {
         int[][] matrix = graph.getAdjacencyMatrix();
         assertEquals(matrix[1][2],Integer.MAX_VALUE);
     }
+    public void testFloydMatrix(){
+        DirectedGraph graph = new DirectedGraph(3);
+        graph.addNode("Guatemala");
+        graph.addNode("Peten");
+        graph.addNode("Zacapa");
+        graph.addEdge("Guatemala", "Peten", 300);
+        graph.addEdge("Guatemala", "Zacapa", 800);
+        graph.addEdge("Peten", "Zacapa", 200);
+        int[][] floydMatrix = graph.getFloydMatrix();
+        assertEquals(floydMatrix[0][1], 300);
+        assertEquals(floydMatrix[0][2], 500);
+        assertEquals(floydMatrix[1][2], 200);
+    }
 }
