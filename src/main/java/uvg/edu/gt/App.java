@@ -15,7 +15,8 @@ public class App
             System.out.println("1. Encontrar el Centro del Grafo");
             System.out.println("2. Ingresar una nueva ruta");
             System.out.println("3. Reportar un bloqueo");
-            System.out.println("4. Salir del programa");
+            System.out.println("4. Encontrar la ruta mas corta");
+            System.out.println("5. Salir del programa");
             int mainSelect = scanner.nextInt();
             switch (mainSelect) {
                 case 1:
@@ -30,8 +31,19 @@ public class App
                     int distancia = scanner.nextInt();
                     break;
                 case 3:
+                    System.out.println("Ingrese la salida del bloqueo");
+                    String salidaBloqueo = scanner.nextLine();
+                    System.out.println("Ingrese el destino del bloqueo");
+                    String destinoBloqueo = scanner.nextLine();
+                    model.blockRoute(salidaBloqueo, destinoBloqueo);
                     break;
                 case 4:
+                    System.out.println("Ingrese la salida");
+                    String salidaRuta = scanner.nextLine();
+                    System.out.println("Ingrese el destino");
+                    String destinoRuta = scanner.nextLine();
+                    //Implementar la salida
+                case 5:
                     System.exit(0);
                     break;
                 default:

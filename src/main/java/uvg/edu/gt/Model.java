@@ -18,9 +18,8 @@ public class Model {
     public void addRoute(String from, String to, int distance){
         graph.addEdge(from, to, distance);
     }
-    public void getMatrix(){
-        System.out.println(Arrays.deepToString(graph.getAdjacencyMatrix()));
-        System.out.println(Arrays.deepToString(graph.getFloydMatrix()));
+    public void blockRoute(String from, String to){
+        graph.removeEdge(from, to);
     }
     public void createGraph(){
         String line;
