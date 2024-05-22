@@ -49,6 +49,13 @@ public class DirectedGraph {
         routeMatrix = new int[numNodes][numNodes];
         for (int i = 0; i < numNodes; i++){
             for (int j = 0; j < numNodes; j++){
+                if (adjacencyMatrix[i][j] != Integer.MAX_VALUE){
+                    routeMatrix[i][j] = i;
+                }
+            }
+        }
+        for (int i = 0; i < numNodes; i++){
+            for (int j = 0; j < numNodes; j++){
                 floydMatrix[i][j] = adjacencyMatrix[i][j];
             }
         }
@@ -68,18 +75,25 @@ public class DirectedGraph {
     public int[][] getFloydMatrix(){
         return floydMatrix;
     }
-    public String getPath(String startNode, String endNode){
+    public ArrayList<String> getPath(String startNode, String endNode){
         int fromNode = nodeList.indexOf(startNode);
         int toNode = nodeList.indexOf(endNode);
         ArrayList<String> path = new ArrayList<>();
+        path.add(Integer.toString(floydMatrix[fromNode][toNode]));
+        path.add(startNode);
         if (floydMatrix[fromNode][toNode] == Integer.MAX_VALUE){
-            return "No hay ruta";
+            return null;
         }
-        return "1";
+        pathRecursive(fromNode, toNode, path);
+        path.add(endNode);
+        return path;
     }
     private void pathRecursive(int fromNode, int toNode, ArrayList<String> path){
         int intermediate = routeMatrix[fromNode][toNode];
-
+        if (intermediate != fromNode){
+            pathRecursive(fromNode, intermediate, path);
+            path.add(nodeList.get(intermediate));
+        }
     }
     public String getCenter(){
         int numNodes = nodeList.size();

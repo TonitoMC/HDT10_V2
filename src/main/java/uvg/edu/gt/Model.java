@@ -21,6 +21,18 @@ public class Model {
     public void blockRoute(String from, String to){
         graph.removeEdge(from, to);
     }
+    public String getPath(String startNode, String endNode){
+        ArrayList<String> outList = graph.getPath(startNode,endNode);
+        String out = "Costo: ";
+        out += outList.get(0) + " | " + outList.get(1);
+        for (int i = 2; i < outList.size(); i++){
+            out += " -> " + outList.get(i);
+        }
+        return out;
+    }
+    public void addPath(String fromNode, String toNode, int distance){
+        graph.addEdge(fromNode,toNode, distance);
+    }
     public void createGraph(){
         String line;
         ArrayList<String> cityList = new ArrayList<String>();

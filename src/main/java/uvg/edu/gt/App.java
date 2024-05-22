@@ -18,6 +18,7 @@ public class App
             System.out.println("4. Encontrar la ruta mas corta");
             System.out.println("5. Salir del programa");
             int mainSelect = scanner.nextInt();
+            scanner.nextLine();
             switch (mainSelect) {
                 case 1:
                     System.out.println(model.getCenter());
@@ -29,6 +30,8 @@ public class App
                     String destino = scanner.nextLine();
                     System.out.println("Ingrese la distancia");
                     int distancia = scanner.nextInt();
+                    scanner.nextLine();
+                    model.addPath(salida, destino, distancia);
                     break;
                 case 3:
                     System.out.println("Ingrese la salida del bloqueo");
@@ -42,7 +45,8 @@ public class App
                     String salidaRuta = scanner.nextLine();
                     System.out.println("Ingrese el destino");
                     String destinoRuta = scanner.nextLine();
-                    //Implementar la salida
+                    System.out.println(model.getPath(salidaRuta, destinoRuta));
+                    break;
                 case 5:
                     System.exit(0);
                     break;
