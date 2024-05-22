@@ -24,7 +24,8 @@ public class App
             System.out.println("2. Ingresar una nueva ruta");
             System.out.println("3. Reportar un bloqueo");
             System.out.println("4. Encontrar la ruta mas corta");
-            System.out.println("5. Salir del programa");
+            System.out.println("5. Mostrar matriz de adyacencia");
+            System.out.println("6. Salir del programa");
             int mainSelect = scanner.nextInt();
             scanner.nextLine();
             switch (mainSelect) {
@@ -60,6 +61,8 @@ public class App
                     System.out.println(model.getPath(salidaRuta, destinoRuta));
                     break;
                 case 5:
+                    model.showAdjacencyMatrix();
+                case 6:
                     //Sale del programa
                     System.exit(0);
                     break;

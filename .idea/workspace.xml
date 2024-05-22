@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="Agregado recorrido">
+    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="Codigo Comentado + Programa Funcional 100%">
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Model.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716338868798</updated>
-      <workItem from="1716338869821" duration="11855000" />
+      <workItem from="1716338869821" duration="12428000" />
     </task>
     <task id="LOCAL-00001" summary="Implementado Floyd y DirectedGraph">
       <option name="closed" value="true" />
@@ -177,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716351543949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Codigo Comentado + Programa Funcional 100%">
+      <option name="closed" value="true" />
+      <created>1716353432465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716353432465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +206,7 @@
     <MESSAGE value="Desarrollo programa principal" />
     <MESSAGE value="Finalizado programa, solo falta recorrido para ruta mas corta" />
     <MESSAGE value="Agregado recorrido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregado recorrido" />
+    <MESSAGE value="Codigo Comentado + Programa Funcional 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codigo Comentado + Programa Funcional 100%" />
   </component>
 </project>

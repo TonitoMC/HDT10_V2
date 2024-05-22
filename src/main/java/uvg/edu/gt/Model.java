@@ -19,6 +19,13 @@ public class Model {
         readFile();
     }
     /**
+     * Muestra la matriz de adyacencia al usuario
+     */
+    public void showAdjacencyMatrix(){
+        int[][] matrix = graph.getFloydMatrix();
+        System.out.println(Arrays.deepToString(matrix));
+    }
+    /**
      * Retorna el centro del grafo
      * @return el centro del grafo
      */
