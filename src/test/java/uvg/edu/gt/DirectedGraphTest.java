@@ -47,4 +47,7 @@ public class DirectedGraphTest extends TestCase {
         int[][] matrix = graph.getAdjacencyMatrix();
         assertEquals(matrix[1][2],Integer.MAX_VALUE);
     }
+    public void testUpdateFloyd(){
+
+    }
 }
