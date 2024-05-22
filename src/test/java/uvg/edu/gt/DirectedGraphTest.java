@@ -7,12 +7,6 @@ import java.util.Arrays;
 
 public class DirectedGraphTest extends TestCase {
 
-    public void testGetNodeList() {
-    }
-
-    public void testGetAdjacencyMatrix() {
-    }
-
     public void testAddNode() {
         DirectedGraph graph = new DirectedGraph(2);
         graph.addNode("Guatemala");

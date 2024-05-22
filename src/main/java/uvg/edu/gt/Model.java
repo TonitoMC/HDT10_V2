@@ -6,33 +6,64 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Esta clase se encarga del funcionamiento interno de la aplicacion, lee el archivo y hace uso de DirectedGraph
+ * @author Jose Merida
+ * @since 21-05-2024
+ * @version 1.0
+ */
 public class Model {
     private DirectedGraph graph;
     public Model(){
         createGraph();
         readFile();
     }
+    /**
+     * Retorna el centro del grafo
+     * @return el centro del grafo
+     */
     public String getCenter(){
         return graph.getCenter();
     }
-    public void addRoute(String from, String to, int distance){
-        graph.addEdge(from, to, distance);
-    }
+    /**
+     * Remueve una ruta del grafo
+     * @param from ciudad de partida
+     * @param to ciudad de destino
+     */
     public void blockRoute(String from, String to){
         graph.removeEdge(from, to);
     }
+    /**
+     * Regresa un String detallando el costo y la ruta de una ciudad a otra
+     * @param startNode ciudad de partida
+     * @param endNode ciudad de destino
+     * @return un String con los detalles concatenados
+     */
     public String getPath(String startNode, String endNode){
         ArrayList<String> outList = graph.getPath(startNode,endNode);
-        String out = "Costo: ";
-        out += outList.get(0) + " | " + outList.get(1);
-        for (int i = 2; i < outList.size(); i++){
-            out += " -> " + outList.get(i);
+        if (outList != null) {
+            String out = "Costo: ";
+            out += outList.get(0) + " | " + outList.get(1);
+            for (int i = 2; i < outList.size(); i++) {
+                out += " -> " + outList.get(i);
+            }
+            return out;
+        } else{
+            return "No hay ruta";
         }
-        return out;
     }
+    /**
+     * Agrega una ruta
+     * @param fromNode ciudad de partida
+     * @param toNode ciudad de destino
+     * @param distance distancia entre ciudades
+     */
     public void addPath(String fromNode, String toNode, int distance){
         graph.addEdge(fromNode,toNode, distance);
     }
+    /**
+     * Crea el grafo con la cantidad de nodos que se encuentran en el archivo txt
+     */
     public void createGraph(){
         String line;
         ArrayList<String> cityList = new ArrayList<String>();
@@ -53,6 +84,9 @@ public class Model {
         }
         graph = new DirectedGraph(cityList.size());
     }
+    /**
+     * Lee el archivo y carga los datos al grafo
+     */
     public void readFile(){
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader("guategrafo.txt"))){
@@ -69,6 +103,4 @@ public class Model {
             e.printStackTrace();
         }
     }
-
-
 }

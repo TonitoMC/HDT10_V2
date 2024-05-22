@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="Finalizado programa, solo falta recorrido para ruta mas corta">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="adef4ebd-380f-480a-8973-edab9375f55d" name="Changes" comment="Agregado recorrido">
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Model.java" afterDir="false" />
@@ -52,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.DirectedGraphTest.executor": "Run",
     "JUnit.DirectedGraphTest.testAddEdge.executor": "Run",
     "JUnit.DirectedGraphTest.testFloydMatrix.executor": "Run",
     "JUnit.DirectedGraphTest.testRemoveEdge.executor": "Run",
@@ -143,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716338868798</updated>
-      <workItem from="1716338869821" duration="9926000" />
+      <workItem from="1716338869821" duration="11855000" />
     </task>
     <task id="LOCAL-00001" summary="Implementado Floyd y DirectedGraph">
       <option name="closed" value="true" />
@@ -169,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716347961257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Agregado recorrido">
+      <option name="closed" value="true" />
+      <created>1716351543949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716351543949</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +198,7 @@
     <MESSAGE value="Implementado Floyd y DirectedGraph" />
     <MESSAGE value="Desarrollo programa principal" />
     <MESSAGE value="Finalizado programa, solo falta recorrido para ruta mas corta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizado programa, solo falta recorrido para ruta mas corta" />
+    <MESSAGE value="Agregado recorrido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregado recorrido" />
   </component>
 </project>
